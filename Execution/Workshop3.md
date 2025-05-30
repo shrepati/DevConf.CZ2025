@@ -34,6 +34,9 @@ This will save the model file to your local directory.
 1. Launch **Podman Desktop**.
 2. Navigate to the **AI Lab** section.
 3. Click on **Catalog** under the **MODELS** tab.
+4. Locate the **Import** button (top-right corner of the Catalog page) and click it.
+5. **Drag and drop** your trained model file (e.g., `ggml-model-f16.gguf`) into the Import window to upload.
+6. Once imported, the model will appear in your **Catalog**.
 
 You should see the newly imported model listed under the **Imported** section.  
 This verifies that the model is now available to use within Podman Desktop.
