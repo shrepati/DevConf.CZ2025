@@ -49,9 +49,9 @@ Before you start adding new skills and knowledge to your model, you can check it
 
 <h1>Creating a Knowledge Skill & Training a Model: Building custom knowledge and fine-tuning models.</h1>
 
-<h2>Contribute knowledge or compositional skills</h2>
+<h2>Creating knowledge</h2>
 
-Create an taxonomy directory at `/instructlab/.local/share/instructlab/taxonomy/compositional_skills/`
+Create an taxonomy directory at `/instructlab/.local/share/instructlab/taxonomy/knowledge/`
 
 Detailed contribution instructions can be found in the ![taxonomy repository](https://github.com/instructlab/taxonomy/blob/main/README.md)
 
