@@ -51,8 +51,8 @@ Before you start adding new skills and knowledge to your model, you can check it
 
 <h2>Contribute knowledge or compositional skills</h2>
 
-<p>Create an taxonomy directory at `/instructlab/.local/share/instructlab/taxonomy/compositional_skills/`</p>
-<p>Detailed contribution instructions can be found in the ![taxonomy repository](https://github.com/instructlab/taxonomy/blob/main/README.md)</p>
+<p>Create an taxonomy directory at `/instructlab/.local/share/instructlab/taxonomy/compositional_skills/</p>`
+<p>Detailed contribution instructions can be found in the ![taxonomy repository](https://github.com/instructlab/taxonomy/blob/main/README.md) </p>
 
 - You must manually create this directory (inside the container or mapped volume).
 
