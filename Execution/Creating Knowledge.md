@@ -44,3 +44,80 @@ ilab model list
 Before you start adding new skills and knowledge to your model, you can check its baseline performance by asking it a questions. The model needs to be trained with the generated synthetic data to use the new skills or knowledge.
 
 ![4](https://github.com/shrepati/DevConf.CZ2025/blob/main/Execution/2.4.png)
+
+
+
+<h1>Creating a Knowledge Skill & Training a Model: Building custom knowledge and fine-tuning models.</h1>
+
+<h2>Contribute knowledge or compositional skills</h2>
+
+Create an taxonomy directory at `/instructlab/.local/share/instructlab/taxonomy/compositional_skills/`
+Detailed contribution instructions can be found in the ![taxonomy repository](https://github.com/instructlab/taxonomy/blob/main/README.md)
+
+- You must manually create this directory (inside the container or mapped volume).
+
+- This is where you’ll add your custom skills or datasets for fine-tuning.
+
+<h2>Create qna.yaml</h2>
+
+- Inside the above directory, create a YAML file named qna.yaml.
+
+- This file should contain Q&A format content in a specific structure.
+
+  Here we have using ![qna.yaml](Link)
+
+<h2>Validate qna.yaml</h2>
+
+```bash
+ilab taxonomy diff
+```
+
+- This command checks if your qna.yaml is correctly formatted.
+
+- It will list the file and whether there are any schema or formatting errors.
+
+<h2> Generate data for taxonomy</h2>
+
+```bash
+ilab data generate --pipeline simple
+```
+
+- This takes the validated qna.yaml and generates training-ready datasets.
+
+- The `--pipeline simple` option specifies a straightforward training flow.
+
+<h2>Check if dataset is created</h2>
+
+```bash
+ilab data list
+```
+
+- Lists all generated datasets.
+
+- Confirms that your custom data (from `qna.yaml`) is now part of the dataset queue.
+
+<h2>Train the model</h2>
+
+```bash
+ilab model train --pipeline simple
+```
+
+- Initiates training using your custom dataset and the base model.
+
+- Training will take time depending on hardware and data size.
+
+- At the end, a path to the trained model will be shown (usually ends in `.gguf`).
+
+
+<h1>Conversing with Your Trained Model: Chatting with the model you've trained to validate its responses</h1>
+
+<h2>Chat with trained model</h2>
+
+```bash
+ilab model chat -m <path to the trained model>
+```
+
+- Replaces `<path to the trained model>` with the actual path shown after training.
+
+- Starts an interactive chat session with your newly trained model.
+
