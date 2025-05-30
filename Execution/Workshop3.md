@@ -51,7 +51,7 @@ This verifies that the model is now available to use within Podman Desktop.
 
 This links your imported model to the RAG Chatbot, so it will use the custom-trained data you copied over.
 
-![RAG chatbot Start](https://github.com/shrepati/DevConf.CZ2025/blob/main/Execution/3.2.gif)
+![RAG chatbot Start](https://github.com/shrepati/DevConf.CZ2025/blob/main/Execution/3.3.gif)
 
 ---
 
@@ -62,10 +62,10 @@ Once you’ve selected the imported model in the **RAG Chatbot** recipe:
 1. Click **Start RAG Chatbot Recipe** to launch the chatbot.
 2. The chatbot is now using your trained model for AI tasks.
 
+![RAG chatbot](https://github.com/shrepati/DevConf.CZ2025/blob/main/Execution/3.2.gif)
+
+
 Congratulations! Your trained model is now fully integrated and powering your RAG Chatbot recipe.
-
-![RAG chatbot](https://github.com/shrepati/DevConf.CZ2025/blob/main/Execution/3.3.gif)
-
 ---
 
 **Need help or troubleshooting tips?**  
