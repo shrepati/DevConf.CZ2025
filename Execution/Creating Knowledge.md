@@ -7,19 +7,19 @@
 
 Here how you run Instructlab as a container
 
-![1](Link)
+![1](https://github.com/shrepati/DevConf.CZ2025/blob/main/Execution/2.1.png)
 
 <h2>Initializing InstructLab and a Taxonomy project</h2>
 
 With ilab installed, You can initialize our tuning environment with the **ilab config init** command. This will download the Taxonomy repository (which contains the structured task definitions and community-provided knowledge) to our local machine with a configuration file (after selecting Enter and Yes for project defaults).
 
-![2](Link)
+![2](https://github.com/shrepati/DevConf.CZ2025/blob/main/Execution/2.2.png)
 
 <h2>Downloading and testing a model with InstructLab</h2>
 
 To get started, download a compact pre-trained & quantized model with the ilab model download command.
 
-![3](Link)
+![3](https://github.com/shrepati/DevConf.CZ2025/blob/main/Execution/2.3.png)
 
 
 You may be prompted to use your Hugging Face token to download the Mistral-7B-Instruct-v0.2-GGUF model.
@@ -43,4 +43,4 @@ ilab model list
 
 Before you start adding new skills and knowledge to your model, you can check its baseline performance by asking it a questions. The model needs to be trained with the generated synthetic data to use the new skills or knowledge.
 
-![4](Link)
+![4](https://github.com/shrepati/DevConf.CZ2025/blob/main/Execution/2.4.png)
