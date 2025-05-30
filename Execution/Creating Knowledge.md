@@ -24,14 +24,20 @@ To get started, download a compact pre-trained & quantized model with the ilab m
 
 You may be prompted to use your Hugging Face token to download the Mistral-7B-Instruct-v0.2-GGUF model.
 
+```bash
 ilab model download --hf-token <your-huggingface-token>
-
+```
 
 Specify a repository, and a ![Hugging Face token](https://huggingface.co/docs/hub/en/security-tokens) if necessary. For example:
 
-ilab model download --repository instructlab/granite-7b-lab --hf-token <your-hugginface-token>
+```bash
+ilab model download --repository instructlab/granite-7b-lab --hf-token <your-huggingface-token>
+```
 
-ilab model list → Lists all available models that are registered or accessible within the iLab system.
+```bash
+ilab model list
+```
+→ Lists all available models that are registered or accessible within the iLab system.
 
 <h2>Chat with the model</h2>
 
