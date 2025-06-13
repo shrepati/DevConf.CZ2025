@@ -28,7 +28,7 @@ You may be prompted to use your Hugging Face token to download the Mistral-7B-In
 ilab model download --hf-token <your-huggingface-token>
 ```
 
-Specify a repository, and a ![Hugging Face token](https://huggingface.co/docs/hub/en/security-tokens) if necessary. For example:
+Specify a repository, and a https://huggingface.co/docs/hub/en/security-tokens if necessary. For example:
 
 ```bash
 ilab model download --repository instructlab/granite-7b-lab --hf-token <your-huggingface-token>
